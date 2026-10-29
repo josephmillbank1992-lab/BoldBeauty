@@ -1,5 +1,46 @@
-import {readFile,access,readdir} from 'node:fs/promises';import assert from 'node:assert/strict';
-import {business,treatments,reviews} from '../src/data.mjs';
-assert.equal(new URL(business.booksy).hostname,'boldbeauty95.booksy.com');assert.equal(treatments.length,4);assert.equal(reviews.length,3);
-const root=new URL('../dist/',import.meta.url);let checked=0;
-async function walk(url){for(const e of await readdir(url,{withFileTypes:true})){const u=new URL(e.name+(e.isDirectory()?'/':''),url);if(e.isDirectory())await walk(u);else if(e.name.endsWith('.html')){const h=await readFile(u,'utf8');assert.equal((h.match(/<h1[ >]/g)||[]).length,e.name==='404.html'?0:1,'One H1 per content page');assert(h.includes('noindex,nofollow'));assert(h.includes('id="main"'));JSON.parse(h.match(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/)[1]);for(const m of h.matchAll(/(?:href|src)="(\/[^"#?]*)(?:#[^"]*)?"/g)){let p=m[1];if(p.endsWith('/'))p+='index.html';await access(new URL('.'+p,root));}for(const m of h.matchAll(/href="\/treatments\/#([^"]+)"/g)){const dest=await readFile(new URL('treatments/index.html',root),'utf8');assert(dest.includes('id="'+m[1]+'"'));}checked++;}}}await walk(root);console.log('PASS: '+checked+' pages; internal links, assets, category anchors, JSON-LD, preview indexing and Booksy destination.');
+import { readFile, access, readdir } from "node:fs/promises";
+import assert from "node:assert/strict";
+import { business, treatments, reviews } from "../src/data.mjs";
+assert.equal(new URL(business.booksy).hostname, "boldbeauty95.booksy.com");
+assert.equal(treatments.length, 4);
+assert.equal(reviews.length, 3);
+const root = new URL("../dist/", import.meta.url);
+let checked = 0;
+async function walk(url) {
+  for (const e of await readdir(url, { withFileTypes: true })) {
+    const u = new URL(e.name + (e.isDirectory() ? "/" : ""), url);
+    if (e.isDirectory()) await walk(u);
+    else if (e.name.endsWith(".html")) {
+      const h = await readFile(u, "utf8");
+      assert.equal(
+        (h.match(/<h1[ >]/g) || []).length,
+        1,
+        "One H1 per content page",
+      );
+      assert(h.includes("noindex,nofollow"));
+      assert(h.includes('id="main"'));
+      JSON.parse(
+        h.match(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/)[1],
+      );
+      for (const m of h.matchAll(/(?:href|src)="(\/[^"#?]*)(?:#[^"]*)?"/g)) {
+        let p = m[1];
+        if (p.endsWith("/")) p += "index.html";
+        await access(new URL("." + p, root));
+      }
+      for (const m of h.matchAll(/href="\/treatments\/#([^"]+)"/g)) {
+        const dest = await readFile(
+          new URL("treatments/index.html", root),
+          "utf8",
+        );
+        assert(dest.includes('id="' + m[1] + '"'));
+      }
+      checked++;
+    }
+  }
+}
+await walk(root);
+console.log(
+  "PASS: " +
+    checked +
+    " pages; internal links, assets, category anchors, JSON-LD, preview indexing and Booksy destination.",
+);
