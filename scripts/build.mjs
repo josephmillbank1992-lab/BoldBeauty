@@ -173,7 +173,7 @@ const home =
   arrow +
   "</a></div>" +
   cards +
-  '</section><section class="intro"><div class="intro-art jade-photo"><img src="/assets/jade-portrait.webp" alt="Jade, the beauty technician behind Bold Beauty" width="440" height="704" loading="lazy"></div><div class="intro-copy"><p class="eyebrow">Meet your beauty technician</p><h2>A little time,<br>just for you.</h2><p>I’m Jade, the face behind Bold Beauty. With eight years of experience and a love for helping you feel your best, I offer beauty treatments in a welcoming Lowton setting.</p><div class="credentials"><span>Qualified</span><span>Certified</span><span>Insured</span></div><a class="button" href="/about/">Meet Jade ' +
+  '</section><section class="intro"><div class="intro-art jade-photo"><img src="/assets/jade-portrait.webp" alt="Jade, the beauty technician behind Bold Beauty" width="500" height="800" loading="lazy"></div><div class="intro-copy"><p class="eyebrow">Meet your beauty technician</p><h2>A little time,<br>just for you.</h2><p>I’m Jade, the face behind Bold Beauty. With eight years of experience and a love for helping you feel your best, I offer beauty treatments in a welcoming Lowton setting.</p><div class="credentials"><span>Qualified</span><span>Certified</span><span>Insured</span></div><a class="button" href="/about/">Meet Jade ' +
   arrow +
   "</a></div></section>" +
   reviewSection;

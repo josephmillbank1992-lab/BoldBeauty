@@ -32,3 +32,7 @@ Jade’s two portrait uploads are used in the homepage introduction and About pa
 The enquiry supports removable selections, conditional lash bundle prices and optional name/client status/message fields. It prepares a WhatsApp message; it neither creates nor confirms an appointment. Model prices are explicitly labelled and explain the portfolio photograph condition. Booksy remains the booking system. No health questions are collected by this form.
 
 Relevant Mane reference patterns: categorised prices, removable shortlist, running guide total, selections carried to WhatsApp, clear distinction between enquiry and booking, and practical arrival links. Not added without client data: opening status, parking instructions, expiry dates, staff pricing or memberships.
+
+
+## Homepage portrait quality
+The homepage uses a native 500 × 800 crop from Jade’s PNG collage, exported at higher WebP quality without upscaling. The portrait is fitted within its panel rather than enlarged to fill half a wide screen. A full-bleed portrait on large/high-density screens will need an individual original photograph; the collage limits available detail. Header styling remains the approved white version pending a design decision.
