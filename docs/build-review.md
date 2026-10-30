@@ -35,3 +35,13 @@ Do not copy Mane’s prices, rules or parking codes.
 ## Before launch
 
 Confirm the domain, full contact/privacy details, current Booksy prices, service and policy wording, opening hours, model terms and permission for all client images. Add supplied treatment-result images as available. Remove preview noindex from HTML, headers and robots only when publishing the approved live site; add canonical URLs, sitemap, absolute social sharing metadata and Search Console verification.
+
+## Jade's October 30 photo and voice-note update
+
+Jade asked to preserve the appearance/layout and use a selection of her work in the opening image. The hero now combines brown classics, brow before/after and lip blush. Treatment sections have labelled galleries; all images open at their full supplied export size. The skin illustration remains because this batch has no confirmed skin-treatment photograph.
+
+User-confirmed lash mapping: 10.48.15 / unbranded 10.44.07 (4) = hybrids with brow wax and tint; 10.49.15 / 10.44.07 (1) = brown classics; 10.49.43 / 10.44.07 (2) = YY; 10.50.06 / 10.44.07 (3) = black classics. Prefer supplied unbranded copies where available. Other lash images have descriptive captions rather than unconfirmed style names. Brow comparisons do not claim a specific tattooing technique. Lip photographs are immediate results, not labelled healed.
+
+Use the two bottom panels of Jade's supplied 10.47.24 collage: treatment action shot on Home and masked portrait on About. These source panels are only 345 and 327 pixels wide, respectively, so display them at limited widths. No retouching or fabricated detail.
+
+2025 certificates establish Beautician of the Year finalist and national third place at the GB Beauty & UK Hair Awards. Copy states third place clearly. Finalist image has its black side borders removed; certificate artwork remains intact.

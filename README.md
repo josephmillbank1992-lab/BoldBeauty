@@ -39,3 +39,6 @@ The homepage uses a native 500 × 800 crop from Jade’s PNG collage, exported a
 
 ## Header logo clarity
 The shared logo uses a lossless 512 × 443 PNG export of Jade’s original 2047 × 1770 artwork. Header display dimensions preserve the artwork’s aspect ratio: 120px desktop width and 92px mobile width. Sticky content offsets follow the larger mark, and the footer logo has an explicit block width. No logo lettering or artwork was redrawn.
+
+
+October 30: Added Jade's supplied working photographs, treatment galleries and 2025 award certificates. The opening image now shows a selection of her work as requested in her voice note. Photo captions preserve the supplied treatment identifications, and immediate lip blush results are identified as such. The skin section awaits a confirmed treatment photo. Original supplied artwork is retained; web exports are resized WebP derivatives.

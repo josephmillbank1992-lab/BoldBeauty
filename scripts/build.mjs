@@ -7,6 +7,7 @@ import {
 } from "../src/data.mjs";
 import { services } from "../src/services.mjs";
 import { priceMenu } from "../src/price-menu.mjs";
+import { gallery, awards } from "../src/gallery.mjs";
 const out = new URL("../dist/", import.meta.url);
 await rm(out, { recursive: true, force: true });
 await mkdir(out, { recursive: true });
@@ -118,7 +119,7 @@ const visual = (t) =>
       t.image +
       '" alt="' +
       esc(t.alt) +
-      '" loading="lazy" width="900" height="425" style="object-position:' +
+      '" loading="lazy" width="900" height="1200" style="object-position:' +
       t.position +
       '">'
     : '<div class="card-art ' +
@@ -169,14 +170,14 @@ const home =
   arrow +
   '</a><a class="text-link" href="' +
   b.booksy +
-  '">Book an appointment</a></div></div><div class="hero-media"><img src="/assets/lashes.webp" alt="Beautifully defined lashes and brows, a treatment result by Jade at Bold Beauty" fetchpriority="high" width="900" height="425"></div></section><nav class="treatment-ribbon" aria-label="Treatment categories"><a href="/treatments/#lashes">Lashes</a><span>/</span><a href="/treatments/#brows">Brows</a><span>/</span><a href="/treatments/#lip-blush">Lip Blush</a><span>/</span><a href="/treatments/#skin">Skin & Facials</a></nav><section class="section"><div class="section-heading"><div><p class="eyebrow">A little something for you</p><h2>Find your feel-good treatment.</h2></div><a class="text-link" href="/treatments/">View all treatments ' +
+  '">Book an appointment</a></div></div><div class="hero-media hero-collage" aria-label="A selection of work by Jade"><img class="hero-main-photo" src="/assets/classics-brown.webp" alt="Brown classic eyelash extensions by Jade" fetchpriority="high" width="900" height="1200"><img src="/assets/brows-before-after.webp" alt="Before and after a brow treatment by Jade" width="900" height="900"><img src="/assets/lip-blush-closeup.webp" alt="Lip blush immediately after treatment by Jade" width="900" height="900"></div></section><nav class="treatment-ribbon" aria-label="Treatment categories"><a href="/treatments/#lashes">Lashes</a><span>/</span><a href="/treatments/#brows">Brows</a><span>/</span><a href="/treatments/#lip-blush">Lip Blush</a><span>/</span><a href="/treatments/#skin">Skin & Facials</a></nav><section class="section"><div class="section-heading"><div><p class="eyebrow">A little something for you</p><h2>Find your feel-good treatment.</h2></div><a class="text-link" href="/treatments/">View all treatments ' +
   arrow +
   "</a></div>" +
   cards +
-  '</section><section class="intro"><div class="intro-art jade-photo"><img src="/assets/jade-portrait.webp" alt="Jade, the beauty technician behind Bold Beauty" width="500" height="800" loading="lazy"></div><div class="intro-copy"><p class="eyebrow">Meet your beauty technician</p><h2>A little time,<br>just for you.</h2><p>I’m Jade, the face behind Bold Beauty. With eight years of experience and a love for helping you feel your best, I offer beauty treatments in a welcoming Lowton setting.</p><div class="credentials"><span>Qualified</span><span>Certified</span><span>Insured</span></div><a class="button" href="/about/">Meet Jade ' +
+  '</section><section class="intro"><div class="intro-art jade-photo"><img src="/assets/jade-working.webp" alt="Jade carrying out a beauty treatment at Bold Beauty" width="345" height="445" loading="lazy"></div><div class="intro-copy"><p class="eyebrow">Meet your beauty technician</p><h2>A little time,<br>just for you.</h2><p>I’m Jade, the face behind Bold Beauty. With eight years of experience and a love for helping you feel your best, I offer beauty treatments in a welcoming Lowton setting.</p><div class="credentials"><span>Qualified</span><span>Certified</span><span>Insured</span></div><a class="button" href="/about/">Meet Jade ' +
   arrow +
   "</a></div></section>" +
-  reviewSection;
+  awards(false) + reviewSection;
 const faq =
   '<section class="section faq"><p class="eyebrow">Before your appointment</p><h2>A few helpful details.</h2>' +
   [
@@ -234,17 +235,17 @@ const treatmentsPage =
         t.detail +
         "</p>" +
         book("View prices & book") +
-        "</div></section>",
+        "</div>" + gallery(t.id) + "</section>",
     )
     .join("") +
   "</div>" +
   faq;
 const about =
-  '<section class="page-heading"><p class="eyebrow">The face behind Bold Beauty</p><h1>Hello, I’m Jade.</h1><p>Eight years in beauty. A personal approach to every appointment.</p></section><section class="section about-story"><div class="logo-panel jade-about-photo"><img src="/assets/jade-about.webp" alt="Meet Jade at Bold Beauty in Lowton" width="440" height="819" loading="lazy"></div><div class="prose"><p class="eyebrow">Be you. Be bold.</p><h2>Beauty that feels<br>like you.</h2><p>I’m a beauty technician based in Lowton, with eight years of experience. I’m fully qualified, certified and insured, with training across lashes, brows, semi-permanent makeup and skin treatments.</p><p>Whether you’re visiting for your regular lash appointment or exploring something new, we can talk through the look you have in mind and the treatment options available.</p><p class="eyebrow" style="margin-top:40px">Experience & training</p><ul class="qualification-list">' +
+  '<section class="page-heading"><p class="eyebrow">The face behind Bold Beauty</p><h1>Hello, I’m Jade.</h1><p>Eight years in beauty. A personal approach to every appointment.</p></section><section class="section about-story"><div class="logo-panel jade-about-photo"><img src="/assets/jade-masked.webp" alt="Jade wearing her Bold Beauty uniform and face covering" width="327" height="445" loading="lazy"></div><div class="prose"><p class="eyebrow">Be you. Be bold.</p><h2>Beauty that feels<br>like you.</h2><p>I’m a beauty technician based in Lowton, with eight years of experience. I’m fully qualified, certified and insured, with training across lashes, brows, semi-permanent makeup and skin treatments.</p><p>Whether you’re visiting for your regular lash appointment or exploring something new, we can talk through the look you have in mind and the treatment options available.</p><p class="eyebrow" style="margin-top:40px">Experience & training</p><ul class="qualification-list">' +
   qualifications.map((q) => "<li>" + q + "</li>").join("") +
   "</ul>" +
   book("Find your appointment") +
-  '</div></section><section class="section location"><div><p class="eyebrow">Your local beauty appointment</p><h2>See you in Lowton.</h2></div><div><address>33 Church Lane<br>Lowton, Warrington<br>WA3 2AS</address><p>Check Booksy for current appointment availability. For treatment questions or help finding us, message Jade on WhatsApp or call 07850 411949.</p><div class="actions"><a class="button outline" href="https://www.google.com/maps/search/?api=1&amp;query=33+Church+Lane+Lowton+WA3+2AS">Get directions ' +
+  '</div></section>' + awards(true) + '<section class="section location"><div><p class="eyebrow">Your local beauty appointment</p><h2>See you in Lowton.</h2></div><div><address>33 Church Lane<br>Lowton, Warrington<br>WA3 2AS</address><p>Check Booksy for current appointment availability. For treatment questions or help finding us, message Jade on WhatsApp or call 07850 411949.</p><div class="actions"><a class="button outline" href="https://www.google.com/maps/search/?api=1&amp;query=33+Church+Lane+Lowton+WA3+2AS">Get directions ' +
   arrow +
   '</a><a class="text-link" href="' +
   b.whatsapp +
@@ -301,3 +302,7 @@ await writeFile(
 );
 await writeFile(new URL("robots.txt", out), "User-agent: *\nDisallow: /\n");
 console.log("Built 4 pages + 404. Preview indexing is disabled.");
+
+
+
+

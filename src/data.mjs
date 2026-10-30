@@ -19,7 +19,7 @@ export const treatments = [
       "From a softer everyday finish to a fuller lash look, explore eyelash extensions tailored to your style.",
     detail:
       "Classic, brown classic and YY eyelash extensions are featured in Jade’s work. Browse Booksy for the current options, prices and appointment times.",
-    image: "/assets/lashes.webp",
+    image: "/assets/hybrids.webp",
     alt: "A close-up of eyelash extensions by Jade at Bold Beauty",
     position: "center",
   },
@@ -32,9 +32,9 @@ export const treatments = [
       "Discover brow waxing and tinting, alongside semi-permanent brow options.",
     detail:
       "Jade’s training includes micropigmentation, microblading, powder brows and nano brow techniques. Get in touch to discuss the finish you have in mind and which appointment to book.",
-    image: "/assets/lashes.webp",
-    alt: "Brows and lashes in a treatment result by Jade",
-    position: "65% 30%",
+    image: "/assets/brows-before-after.webp",
+    alt: "Before and after a brow treatment by Jade",
+    position: "center",
   },
   {
     id: "lip-blush",
@@ -45,7 +45,9 @@ export const treatments = [
       "Explore semi-permanent lip colour with a finish chosen around your preferences.",
     detail:
       "Talk through your desired look with Jade before booking. She can explain the treatment, preparation, suitability and aftercare.",
-    image: null,
+    image: "/assets/lip-blush-closeup.webp",
+    alt: "Lip blush immediately after treatment by Jade",
+    position: "center",
   },
   {
     id: "skin",
@@ -85,3 +87,4 @@ export const reviews = [
       "She is so flexible and accommodating. She is also the friendliest lady and never makes me feel uncomfortable when getting my lashes done.",
   },
 ];
+
