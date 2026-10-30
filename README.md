@@ -42,3 +42,4 @@ The shared logo uses a lossless 512 × 443 PNG export of Jade’s original 2047 
 
 
 October 30: Added Jade's supplied working photographs, treatment galleries and 2025 award certificates. The opening image now shows a selection of her work as requested in her voice note. Photo captions preserve the supplied treatment identifications, and immediate lip blush results are identified as such. The skin section awaits a confirmed treatment photo. Original supplied artwork is retained; web exports are resized WebP derivatives.
+October 30 follow-up: Added the supplied microneedling image to the Skin & Facials card and treatment section, replacing the illustration. Treatment-page image preserves the full photograph.

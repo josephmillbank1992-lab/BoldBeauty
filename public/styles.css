@@ -1367,3 +1367,6 @@ details p {
 @media (prefers-reduced-motion: reduce) { .work-photo img { transition: none; } .work-photo:hover img { transform: none; } }
 
 .work-gallery { order: 3; }
+/* Show the supplied microneedling result in full on the treatment page. */
+#skin .detail-visual { height: auto; }
+#skin .detail-visual img { display: block; width: 100%; height: auto; object-fit: contain; }
