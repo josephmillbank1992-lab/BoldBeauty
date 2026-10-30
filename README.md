@@ -36,3 +36,6 @@ Relevant Mane reference patterns: categorised prices, removable shortlist, runni
 
 ## Homepage portrait quality
 The homepage uses a native 500 × 800 crop from Jade’s PNG collage, exported at higher WebP quality without upscaling. The portrait is fitted within its panel rather than enlarged to fill half a wide screen. A full-bleed portrait on large/high-density screens will need an individual original photograph; the collage limits available detail. Header styling remains the approved white version pending a design decision.
+
+## Header logo clarity
+The shared logo uses a lossless 512 × 443 PNG export of Jade’s original 2047 × 1770 artwork. Header display dimensions preserve the artwork’s aspect ratio: 120px desktop width and 92px mobile width. Sticky content offsets follow the larger mark, and the footer logo has an explicit block width. No logo lettering or artwork was redrawn.

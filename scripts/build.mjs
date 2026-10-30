@@ -29,7 +29,7 @@ const book = (label = "Book on Booksy", classes = "") =>
   arrow +
   "</a>";
 const logo =
-  '<img src="/assets/logo.webp" alt="Be you be… Bold Beauty" width="220" height="190">';
+  '<img src="/assets/logo.png" alt="Be you be… Bold Beauty" width="512" height="443">';
 const header = (path) =>
   '<a class="skip" href="#main">Skip to content</a><div class="announcement">Beauty appointments in Lowton</div><header class="site-header"><div class="header-inner"><a class="logo" href="/" aria-label="Bold Beauty home">' +
   logo +
