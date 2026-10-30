@@ -3,7 +3,7 @@ export const serviceGroups = [
   {
     id: "lash-prices",
     name: "Eyelash extensions",
-    note: "Black or brown extensions are available.",
+    note: "Black or brown extensions are available. UV light-cured adhesive is included as standard with all lash treatments, at no extra cost.",
   },
   {
     id: "facial-prices",

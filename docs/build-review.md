@@ -46,3 +46,7 @@ Use the two bottom panels of Jade's supplied 10.47.24 collage: treatment action 
 
 2025 certificates establish Beautician of the Year finalist and national third place at the GB Beauty & UK Hair Awards. Copy states third place clearly. Finalist image has its black side borders removed; certificate artwork remains intact.
 Skin image follow-up: user confirmed WhatsApp Image 2026-10-30 at 11.23.07.jpeg as microneedling. This replaces the skin illustration; no skin-treatment image remains outstanding.
+
+UV update: user confirmed all lash treatments use UV light-cured adhesive at no extra cost. Copy avoids latest/best claims, allergy-free or guaranteed irritation-free claims, and fixed retention promises. Supplier comparison consulted: https://www.xtremelashes.com/flashcureuv (low fumes, light curing, retention, immediate return to normal activities; expressly not clinically tested hypoallergenic). Jade's specific system/adhesive brand is not identified or inferred. Clients with previous reactions are directed to discuss suitability. Supplied UV application picture is used as a process illustration; no claim it depicts Jade or a Bold Beauty client.
+
+New source mapping: 1000123133 and 1000123134 = Russian lashes; 1000123135 = facial; 1000123136 = lip blush before/after; 1000123137 = UV application illustration. Retain existing microneedling image in the new skin gallery alongside the facial. Skin card now uses the facial photograph.

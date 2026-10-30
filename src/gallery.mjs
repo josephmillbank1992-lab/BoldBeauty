@@ -1,5 +1,7 @@
 const images = {
   lashes: [
+    ["russian-lashes", "Russian lashes", "Russian eyelash extensions by Jade"],
+    ["russian-detail", "Russian lash detail", "Another view of Russian eyelash extensions by Jade"],
     ["hybrids", "Hybrids + brow wax & tint", "Hybrid eyelash extensions with an eyebrow wax and tint by Jade"],
     ["classics-brown", "Classics in brown", "Brown classic eyelash extensions by Jade"],
     ["yy-lashes", "YY lashes", "YY eyelash extensions by Jade"],
@@ -13,7 +15,12 @@ const images = {
     ["brows-before-after", "Brow transformation", "Brow treatment before and after by Jade"],
     ["brow-result", "Brow detail", "A closer look at brows before and after treatment by Jade"]
   ],
+  skin: [
+    ["facial-result", "Facial", "Skin after a facial treatment by Jade"],
+    ["microneedling", "Microneedling", "Skin immediately after microneedling by Jade"]
+  ],
   "lip-blush": [
+    ["lip-blush-soft", "Lip blush before & after", "Lips before and immediately after lip blush by Jade"],
     ["lip-blush-closeup", "Lip blush", "Close-up of lip blush immediately after treatment by Jade"],
     ["lip-blush-result", "Lip blush transformation", "Lips before and immediately after lip blush by Jade"],
     ["lip-blush-before-after", "A closer look", "Before and immediately after another lip blush treatment by Jade"]

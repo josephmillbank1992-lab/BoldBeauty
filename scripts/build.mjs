@@ -8,6 +8,7 @@ import {
 import { services } from "../src/services.mjs";
 import { priceMenu } from "../src/price-menu.mjs";
 import { gallery, awards } from "../src/gallery.mjs";
+import { uvLashes } from "../src/uv-lashes.mjs";
 const out = new URL("../dist/", import.meta.url);
 await rm(out, { recursive: true, force: true });
 await mkdir(out, { recursive: true });
@@ -174,7 +175,7 @@ const home =
   arrow +
   "</a></div>" +
   cards +
-  '</section><section class="intro"><div class="intro-art jade-photo"><img src="/assets/jade-working.webp" alt="Jade carrying out a beauty treatment at Bold Beauty" width="345" height="445" loading="lazy"></div><div class="intro-copy"><p class="eyebrow">Meet your beauty technician</p><h2>A little time,<br>just for you.</h2><p>I’m Jade, the face behind Bold Beauty. With eight years of experience and a love for helping you feel your best, I offer beauty treatments in a welcoming Lowton setting.</p><div class="credentials"><span>Qualified</span><span>Certified</span><span>Insured</span></div><a class="button" href="/about/">Meet Jade ' +
+  '</section>' + uvLashes(true) + '<section class="intro"><div class="intro-art jade-photo"><img src="/assets/jade-working.webp" alt="Jade carrying out a beauty treatment at Bold Beauty" width="345" height="445" loading="lazy"></div><div class="intro-copy"><p class="eyebrow">Meet your beauty technician</p><h2>A little time,<br>just for you.</h2><p>I’m Jade, the face behind Bold Beauty. With eight years of experience and a love for helping you feel your best, I offer beauty treatments in a welcoming Lowton setting.</p><div class="credentials"><span>Qualified</span><span>Certified</span><span>Insured</span></div><a class="button" href="/about/">Meet Jade ' +
   arrow +
   "</a></div></section>" +
   awards(false) + reviewSection;
@@ -235,7 +236,7 @@ const treatmentsPage =
         t.detail +
         "</p>" +
         book("View prices & book") +
-        "</div>" + gallery(t.id) + "</section>",
+        "</div>" + (t.id === "lashes" ? uvLashes() : "") + gallery(t.id) + "</section>",
     )
     .join("") +
   "</div>" +

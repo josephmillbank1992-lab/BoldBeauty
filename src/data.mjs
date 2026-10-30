@@ -57,8 +57,8 @@ export const treatments = [
     description: "Explore dermaplaning, microneedling and microdermabrasion.",
     detail:
       "Jade has completed CPD training in dermaplaning and microneedling. Ask her about the options available and any consultation or preparation needed before your visit.",
-    image: "/assets/microneedling.webp",
-    alt: "Skin immediately after a microneedling treatment by Jade at Bold Beauty",
+    image: "/assets/facial-result.webp",
+    alt: "Skin after a facial treatment by Jade at Bold Beauty",
     position: "center",
   },
 ];
